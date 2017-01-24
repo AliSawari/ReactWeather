@@ -70,5 +70,5 @@ var Weather = React.createClass({
     );
   }
 });
-
+// just use a little comment here 
 module.exports = Weather;
