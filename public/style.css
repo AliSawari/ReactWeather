@@ -1,0 +1,32 @@
+*{font-family: Arial;transition: .3s;}
+nav {
+  background: orange;
+  opacity: .8;
+  position: absolute;
+  top:0;
+  font-size: 20px;
+  width: 80%;
+  border-radius:10px;
+  height: 80px;
+}
+nav:hover{
+  opacity: 1;
+}
+nav ul{
+  display: block;
+}
+nav ul li {
+  display: inline-block;
+  margin-left:20px;
+  padding: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+nav ul li:hover{
+  font-weight: bold;
+}
+h2 {
+  position: absolute;
+  top:100px;
+}
