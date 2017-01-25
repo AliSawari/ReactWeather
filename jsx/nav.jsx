@@ -16,12 +16,3 @@ var Nav = React.createClass({
 });
 
 module.exports = Nav;
-
-`
-<nav>
-  <ul>
-
-
-  </ul>
-</nav>
-`
