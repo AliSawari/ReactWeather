@@ -5,7 +5,7 @@ var App = React.createClass({
     return (
       <div>
       <Nav/>
-      <h1>This is the App Component</h1>
+      <h1 className="app">This is the App Component</h1>
       {this.props.children}
       </div>
     );

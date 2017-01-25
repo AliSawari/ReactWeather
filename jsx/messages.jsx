@@ -3,7 +3,7 @@ var React = require('react');
 var Messages = React.createClass({
   render:function(){
     return(
-      <div>
+      <div className="caption">
         <h3>
           The Messages
         </h3>

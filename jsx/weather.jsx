@@ -41,19 +41,19 @@ var Weather = React.createClass({
       status:"Please Input a Valid City Name",
       Loc:false
     });
-    return <h3>{status}</h3> ;
+    return <h3 className="weatherMsg">{status}</h3> ;
   },
   render:function(){
     var {isLoad,status,Loc,Temp,Max,Min,Humid,Press} = this.state;
     function Decide(){
       if(isLoad){
-        return <h3>Fetching Weather...</h3>
+        return <h3 className="weatherMsg">Fetching Weather...</h3>
       } else if(Loc) {
          return (<WeatherMessage Loc={Loc} Temp={Temp}
           Max={Max} Min={Min} Humid={Humid} Press={Press}/> );
         }
         else if(!Loc && !isLoad){
-          return <h3>{status}</h3>
+          return <h3 className="weatherMsg">{status}</h3>
           }
         else if(warn()){
         return warn();
@@ -61,7 +61,7 @@ var Weather = React.createClass({
     }
     return(
       <div>
-        <h3>
+        <h3 className="caption">
           The Weather component
         </h3>
         <WeatherForm warn={this.warn} Get={this.Get}/>
@@ -70,5 +70,5 @@ var Weather = React.createClass({
     );
   }
 });
-// just use a little comment here 
+// just use a little comment here
 module.exports = Weather;

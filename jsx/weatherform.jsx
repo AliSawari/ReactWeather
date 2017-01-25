@@ -13,7 +13,7 @@ var WeatherForm = React.createClass({
   },
   render:function(){
     return(
-      <form onSubmit={this.Get}>
+      <form className="weatherForm" onSubmit={this.Get}>
         <input type="text" ref="inp" autoComplete="on" />
         <button>Get Weather</button>
       </form>
