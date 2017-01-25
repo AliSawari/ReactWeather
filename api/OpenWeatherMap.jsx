@@ -6,14 +6,11 @@ var fetch = {
     var ReqURL = OPEN_WEATHER_MAP + '&q=' + encURL;
     return axios.get(ReqURL).then(function(res){
       if(res.data.cod && res.data.message){
-        debugger;
         throw new Error(" City Not Found");
       } else {
-        debugger;
         return res.data.main;
       }
     },function(res){
-      debugger;
       throw new Error(" City Not Found");
     });
   }
