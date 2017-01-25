@@ -9,7 +9,7 @@ var Messages = React.createClass({
         </h3>
         <h5>
           This is the Messages Component
-        <h5>
+        </h5>
       </div>
     );
   }
