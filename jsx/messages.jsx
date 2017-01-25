@@ -3,10 +3,15 @@ var React = require('react');
 var Messages = React.createClass({
   render:function(){
     return(
-      <h3>
-        The Messages component
-      </h3>
-    )
+      <div>
+        <h1>
+          The Messages component
+        </h1>
+        <p>
+          This is the Messages Component
+        </p>
+      </div>
+    );
   }
 });
 
