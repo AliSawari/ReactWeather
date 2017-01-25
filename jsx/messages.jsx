@@ -5,7 +5,7 @@ var Messages = React.createClass({
     return(
       <div>
         <h1>
-          The Messages component
+          The Messages
         </h1>
         <p>
           This is the Messages Component
