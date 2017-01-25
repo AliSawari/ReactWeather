@@ -4,12 +4,12 @@ var Messages = React.createClass({
   render:function(){
     return(
       <div>
-        <h1>
+        <h3>
           The Messages
-        </h1>
-        <p>
+        </h3>
+        <h5>
           This is the Messages Component
-        </p>
+        <h5>
       </div>
     );
   }
