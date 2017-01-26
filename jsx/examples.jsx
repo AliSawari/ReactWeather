@@ -1,16 +1,18 @@
 var React = require('react');
 
-var About = React.createClass({
+var Examples = React.createClass({
   render:function(){
     return(
       <div className="caption">
         <h1>
-          The About
+          Examples
         </h1>
-        <h3>This is the about page</h3>
+        <h3>
+          This is the Examples Component
+        </h3>
       </div>
     );
   }
 });
 
-module.exports = About;
+module.exports = Examples;
