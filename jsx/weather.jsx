@@ -30,9 +30,9 @@ var Weather = React.createClass({
         isLoad:false,
         status:"success"
       });
-    },function(harchi){
+    },function(whatever){
       W.setState({Loc:false,isLoad:false,status:'Error Fetching Data!'});
-      alert(harchi);
+      alert(whatever);
     });
   },
   warn:function(){
