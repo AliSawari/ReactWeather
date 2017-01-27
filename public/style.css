@@ -56,9 +56,12 @@ html,body{
   left: 3rem;
   border-radius: 15px;
   border: 1px solid;
-  box-shadow: 0 0 10px grey;
-}.weatherForm button:active{
-    box-shadow: 0 0 20px black;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+} .weatherForm button:hover{
+  box-shadow: 0 0 20px black;
+} .weatherForm button:active{
+    box-shadow: 0 0 50px black;
 } .weatherMsg {
   position: absolute;
   top: 22rem; /* 400px */
