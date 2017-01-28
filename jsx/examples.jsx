@@ -1,5 +1,5 @@
 var React = require('react');
-
+var {Link} = require('react-router');
 var Examples = React.createClass({
   render:function(){
     return(
@@ -8,8 +8,16 @@ var Examples = React.createClass({
           Examples
         </h1>
         <h3>
-          This is the Examples Component
+          Here are some Weather Examples
         </h3>
+        <ul className="exLinks">
+          <li>
+            <Link to="/#/?location=Ahvaz">Ahvaz,IR</Link>
+          </li>
+          <li>
+            <Link to="/#/?location=Terhan">Tehran,IR</Link>
+          </li>
+        </ul>
       </div>
     );
   }

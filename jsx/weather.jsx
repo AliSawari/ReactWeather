@@ -60,8 +60,8 @@ var Weather = React.createClass({
       }
     }
     return(
-      <div>
-        <h1 className="caption">
+      <div className="caption">
+        <h1>
           Get Weather
         </h1>
         <WeatherForm warn={this.warn} Get={this.Get}/>
