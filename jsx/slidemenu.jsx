@@ -8,8 +8,9 @@ var SlideMenu = React.createClass({
     var items = menu.find('ul').find('li');
     x++;
     TweenLite.to(menu,.3,{
-      width:'40%',
-      opacity:1
+      height:window.innerHeight,
+      width:'50%',
+      opacity:1,
     });
     TweenLite.to(items,.5,{
       display:'block',
@@ -33,7 +34,8 @@ var SlideMenu = React.createClass({
       bottom:'-100%',
     });
     TweenLite.to(btn,1,{
-      bottom:'10px'
+      bottom:'-5px',
+      left:'0'
     });
   },
   render:function(){

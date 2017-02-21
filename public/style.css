@@ -1,7 +1,6 @@
 html,body{
   margin:0;
   padding: 0;
-  overflow: hidden;
 } *{
   font-family: Arial;
   text-decoration: none;
@@ -85,19 +84,19 @@ html,body{
   text-decoration: none;
 } .slide button{
   display: none;
-  z-index: 5;
+  z-index: 2;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  height: 100px;
-  width: 100px;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background-color: inherit;
   border: none;
 } .slide img {
   display: none;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 } .slide section {
   display: none;
   position: absolute;
@@ -107,16 +106,17 @@ html,body{
   width: 0;
   height: 100%;
 } .slide section ul li {
-  width: 100px;
+  width: 150px;
   display: none;
   position: relative;
   padding-top: 40px;
   font-size: 25px;
   color:#aaa;
+  border-bottom-right-radius: 40px;
 } .slide section ul li:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid #eee;
   color:#fff;
-  transition: .5s;
+  transition: .5s color;
 }
 @keyframes colors {
   0% {background-color:#99ebff;}
