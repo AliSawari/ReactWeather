@@ -3,15 +3,15 @@ const OPEN_WEATHER_MAP = 'http://api.openweathermap.org/data/2.5/weather?&appid=
 var fetch = {
   getTemp:function(Loc){
     var encURL = encodeURIComponent(Loc);
-    var ReqURL = OPEN_WEATHER_MAP + '&q=' + encURL;
+    var ReqURL = `${OPEN_WEATHER_MAP}&q=${encURL}`;
     return axios.get(ReqURL).then(function(res){
       if(res.data.cod && res.data.message){
-        throw new Error(" City Not Found");
+        throw new Error("City not Found");
       } else {
         return res.data.main;
       }
     },function(res){
-      throw new Error(" City Not Found");
+      throw new Error("404 Not Found");
     });
   }
 }

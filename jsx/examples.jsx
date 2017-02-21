@@ -12,10 +12,10 @@ var Examples = React.createClass({
         </h3>
         <ul className="exLinks">
           <li>
-            <Link to="/#/?location=Ahvaz">Ahvaz,IR</Link>
+            <Link to="/?location=Ahvaz">Ahvaz,IR</Link>
           </li>
           <li>
-            <Link to="/#/?location=Terhan">Tehran,IR</Link>
+            <Link to="/?location=Terhan">Tehran,IR</Link>
           </li>
         </ul>
       </div>
