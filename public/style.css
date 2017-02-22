@@ -18,6 +18,7 @@ html,body{
   border:1px solid;
   box-shadow:0 0 15px grey;
   transition: .3s;
+  z-index: 1;
 } .nav:hover{
   opacity: 1;
 }.nav ul {
@@ -102,6 +103,7 @@ html,body{
   position: absolute;
   background-color: rgba(0,0,0,0.8);
   top:0;
+  z-index: 3;
   left: 0;
   width: 0;
   height: 100%;
